@@ -8,8 +8,9 @@ resource "azurerm_storage_account" "lab" {
     account_tier = "Standard"
     account_replication_type = "LRS"
   
-}
-tags = {
-    environment = "Terraform Storage"
-    CreatedBy = "Gaurav"
+
+    tags = {
+        environment = "Terraform Storage"
+        CreatedBy = "Gaurav"
+    }
 }
