@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 resource "azurerm_storage_account" "terraformstatefileazure" {
     name    = "tfstatefileazure"
-    resource_group_name = "Terraform"
+    resource_group_name = "SL-Storage"
     location = "East US"
     account_tier = "Standard"
     account_replication_type = "LRS"
