@@ -1,7 +1,7 @@
 provider "azurerm" {
   version = 1.38
 }
-resource "azurerm_storage_account" "lab" {
+resource "azurerm_storage_account" "terraformstatefile-azure" {
     name    = "tfstatefile-azure"
     resource_group_name = "Terraform"
     location = "East US"
