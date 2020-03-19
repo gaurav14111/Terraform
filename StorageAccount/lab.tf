@@ -1,5 +1,3 @@
-provider "azurerm" {
-  version = 1.38
 
 resource "azurerm_storage_account" "terraformstatefileazure" {
     name    = "tfstatefileazure"
