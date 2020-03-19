@@ -8,7 +8,7 @@ terraform{
         resource_group_name="Terraform"
         storage_account_name="tfstatefileterraform"
         container_name ="tfstatefile"
-        key ="terraform.tfstate
+        key ="terraform.tfstate"
 
     }
 }
