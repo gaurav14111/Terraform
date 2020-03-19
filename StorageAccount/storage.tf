@@ -1,13 +1,11 @@
-variable "region" {}  
-variable "ResourceGroup" {}
-variable "Storage_Account_Name" {}
+
 
 resource "azure_storage_account" "sa" {
-    name =var.Storage_Account_Name
-    resource_group_name = var.ResourceGroup
-    location =var.region
+    name ="vedaantgreenninja"
+    resource_group_name = "TFResourceGroup"
+    location ="westus2"
     account_tier ="Standard"
-    account_replication_type="GRS"
+    account_replication_type="LRS"
 
     tags={
         environment ="Terraform Storage"
