@@ -1,5 +1,5 @@
 #Create virtual network
-resrouce "azurevm_virtual_network" "dc47-app-vnet"
+resource "azurevm_virtual_network" "dc47-app-vnet"
 {
     name = "dc47-app-vnet"
     address_space = ["10.0.0.0/16"]
@@ -7,7 +7,7 @@ resrouce "azurevm_virtual_network" "dc47-app-vnet"
     resource_group_name="TFResourceGroup"
 
 }
-resrouce "azurevm_virtual_network" "dc47-app-dr-vnet"
+resource "azurevm_virtual_network" "dc47-app-dr-vnet"
 {
     name = "dc47-app-dr-vnet"
     address_space = ["10.0.0.0/16"]
@@ -15,7 +15,7 @@ resrouce "azurevm_virtual_network" "dc47-app-dr-vnet"
     resource_group_name="TFResourceGroup"
 
 }
-resrouce "azurevm_virtual_network" "dc47-wan-vnet"
+resource "azurevm_virtual_network" "dc47-wan-vnet"
 {
     name = "dc47-wan-vnet"
     address_space = ["11.0.0.0/16"]
@@ -24,7 +24,7 @@ resrouce "azurevm_virtual_network" "dc47-wan-vnet"
 
 }
 
-resrouce "azurevm_virtual_network" "dc47-wan-dr-vnet"
+resource "azurevm_virtual_network" "dc47-wan-dr-vnet"
 {
     name = "dc47-wan-dr-vnet"
     address_space = ["11.0.0.0/16"]
@@ -33,7 +33,7 @@ resrouce "azurevm_virtual_network" "dc47-wan-dr-vnet"
 
 }
 
-resrouce "azurevm_virtual_network" "pb47-vnet"
+resource "azurevm_virtual_network" "pb47-vnet"
 {
     name = "pb47-vnet"
     address_space = ["12.0.0.0/16"]
@@ -42,7 +42,7 @@ resrouce "azurevm_virtual_network" "pb47-vnet"
 
 }
 
-resrouce "azurevm_virtual_network" "pb47-dr-vnet"
+resource "azurevm_virtual_network" "pb47-dr-vnet"
 {
     name = "pb47-dr-vnet"
     address_space = ["12.0.0.0/16"]
