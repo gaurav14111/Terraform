@@ -15,7 +15,7 @@ resource "azurerm_network_security_rule" "nsr1" {
     source_address_prefix ="*"
     destination_address_prefix="*"
     resource_group_name="TFResourceGroup"
-    #network_security_group_name = azure_network_security_group.nsg.name
+    network_security_group_name = "aks-agentpool-nsg"
 }
 resource "azurerm_network_security_rule" "nsr2" {
     name= "Web8080"
@@ -28,7 +28,7 @@ resource "azurerm_network_security_rule" "nsr2" {
     source_address_prefix ="*"
     destination_address_prefix="*"
     resource_group_name="TFResourceGroup"
-    #network_security_group_name = azure_network_security_group.nsg.name
+    network_security_group_name = "aks-agentpool-nsg"
 }
 
 resource "azurerm_network_security_rule" "nsr3" {
@@ -42,5 +42,5 @@ resource "azurerm_network_security_rule" "nsr3" {
     source_address_prefix ="*"
     destination_address_prefix="*"
     resource_group_name="TFResourceGroup"
-    #network_security_group_name = azure_network_security_group.nsg.name
+    network_security_group_name = "aks-agentpool-nsg"
 }
