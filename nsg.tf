@@ -3,7 +3,7 @@ resource "azurerm_network_security_group" "nsg" {
     location = "westus2"
     resource_group_name="TFResourceGroup"
 }
-/*
+
 resource "azurerm_network_security_rule" "nsr1" {
     name= "Web80"
     priority = 1001
@@ -44,4 +44,3 @@ resource "azurerm_network_security_rule" "nsr3" {
     resource_group_name="TFResourceGroup"
     network_security_group_name = azure_network_security_group.nsg.name
 }
-*/
