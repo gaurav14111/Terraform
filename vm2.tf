@@ -91,6 +91,6 @@ resource "azurerm_virtual_machine" "example" {
 
 boot_diagnostics {
         enabled     = "true"
-        storage_uri = azurerm_storage_account.sa.primary_blob_endpoint
+        storage_uri = azurerm_storage_account.sa2.primary_blob_endpoint
     }
 }
