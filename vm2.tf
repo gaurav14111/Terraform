@@ -1,7 +1,3 @@
-provider "azurerm" {
-    version = 1.38
-    }
-
 # Create virtual network
 resource "azurerm_virtual_network" "TFNet" {
     name                = "TFVnet"
