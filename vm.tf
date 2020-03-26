@@ -4,7 +4,7 @@ data "azurerm_subnet" "tfsubnet" {
     resource_group_name="TFResourceGroup"
 }
 
-resource "azurerm_public_ip" "pubip1"{
+/*resource "azurerm_public_ip" "pubip1"{
     name = "pubip1"
     location = "westus2"
     resource_group_name = "TFResourceGroup"
