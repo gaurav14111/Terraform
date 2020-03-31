@@ -42,7 +42,7 @@ resource "azurerm_network_interface" "example" {
 
 #Create Boot Diagnostic Account
 resource "azurerm_storage_account" "sa2" {
-  name                     = "veddantisninjaboot" 
+  name                     = "vedaantisninjaboot" 
   resource_group_name      = "TFResourceGroup"
   location                 = "West US2"
    account_tier            = "Standard"
